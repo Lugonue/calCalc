@@ -18,23 +18,25 @@
     </h1>
     <form class="" name="counter" action="#" method="post">
 
-        <h2>
-            Пол
-        </h2>
-        <ul>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Мужчина
-                </label>
-            </li>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Женщина
-                </label>
-            </li>
-        </ul>
+        <fieldset>
+            <legend>
+                Пол
+            </legend>
+            <ul>
+                <li>
+                    <input type="radio" name="gender" checked>
+                    <label>
+                        Мужчина
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="gender">
+                    <label>
+                        Женщина
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
 
         <fieldset>
             <legend>
@@ -45,21 +47,21 @@
                 <span>лет</span>
             </div>
             <div>
-                <input type="text">
+                <input type="text" value="0">
             </div>
             <div>
                 <label>Рост</label>
                 <span>см</span>
             </div>
             <div>
-                <input type="text">
+                <input type="text" value="0">
             </div>
             <div>
                 <label>Вес</label>
                 <span>кг</span>
             </div>
             <div>
-                <input type="text">
+                <input type="text" value="0">
             </div>
         </fieldset>
         <fieldset>
@@ -69,7 +71,7 @@
         <ul>
             <li>
             <div>
-                <input type="radio">
+                <input type="radio" checked>
                 <label>
                     Минимальная
                 </label>
@@ -125,7 +127,7 @@
         </ul>
         </fieldset>
 
-        <button class="submit" name="submit" type="submit">
+        <button class="submit" name="submit" type="submit" disabled>
             Рассчитать
         </button>
         <button class= "reset" name="reset" type="reset" disabled>
@@ -135,7 +137,7 @@
         </button>
     </form>
 
-    <section>
+    <section class="printResult">
         <h2>
             Ваша норма калорий
         </h2>
