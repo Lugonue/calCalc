@@ -1,0 +1,25 @@
+{
+  
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "name": "mycalc",
+  "description": "## Состояние по умолчанию - Выбран мужской пол. - В полях ввода стоит 0. - Выбрана «минимальная» физическая активность. - Кнопка «Рассчитать» неактивна. - Кнопка сброса данных из полей ввода неактивна. - Блок с выводом информации о калориях скрыт.",
+  "version": "1.0.0",
+  "main": "index.html",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lugonue/calCalc.git"
+  },
+  "author": "Const",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lugonue/calCalc/issues"
+  },
+  "homepage": "https://github.com/Lugonue/calCalc#readme"
+}

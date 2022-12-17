@@ -4,18 +4,23 @@
 }
 body {
     
-    background-color: rgb(185, 240, 242);
-
+    background-image: linear-gradient(to right, rgb(234, 210, 72), rgb(108, 108, 12));
 }
 main {
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 article {
     font: 16px "Couriernew", monospace;
+    position: relative;
 }
 fieldset legend {
     font-weight: 700;
+
+    border: 1px solid rgb(61, 56, 56);
+    background-color: rgb(220, 225, 197);
+    padding: 2px;
 
 
 }
@@ -23,10 +28,13 @@ h1, h2 {
     text-align: center;
 }
 fieldset {
+    margin-bottom: 10px;
+    box-shadow: 6px 3px rgb(105, 102, 102);
+
     position:relative;
-    background-color: rgb(164, 216, 218);
+    background-color: rgb(220, 225, 197);
     top: auto;
-    border-radius: 5%;
+    border: 1px solid black;
 }
 section {
     text-align: center;
@@ -37,14 +45,72 @@ li {
     list-style-type: none;
     position: relative;
 }
-fieldset li::before {
-    content: "->";
-    display: inline;
-
-    position: absolute;
-    left: -30px;
+.printResultDispNone {
+    display: none;
 
 }
-.printResult {
-    display: none;
+
+input[type="radio"] {
+    opacity: 0;
+}
+label {
+    position: relative;
+}
+label[for]::before {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    
+
+    background-image: url(../img/icon-radio-empty.svg);
+    background-position: center;
+  
+    position: absolute;
+    left: -1.5rem;
+    top: 2px;
+  
+    border-radius: 0.3rem;
+}
+label[for]:hover::before {
+    opacity: 0.5;
+    background-image: url(../img/icon-radio-checked.svg);
+    background-position: center;
+}
+input:checked + label[for]::before {
+    opacity: 1;
+    background-image: url(../img/icon-radio-checked.svg);
+    background-position: center;
+}
+.printResultDispNone {
+    margin-top: 10px;
+    background-color: rgb(197, 201, 177);
+    border: 1px solid black;
+    box-shadow: 6px 3px rgb(105, 102, 102);
+}
+.parametr {
+    position: relative;
+}
+.checkedInput::before {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+
+    background-image: url(../img/icon-check.svg);
+    background-position: center;
+  
+    position: absolute;
+    right: -5rem;
+    top: 2px;
+  
+    border-radius: 0.3rem;
+}
+.submit:hover {
+    background-color: rgb(64, 255, 47);
+}
+.reset:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(212, 28, 28);
 }
